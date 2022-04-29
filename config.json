@@ -22,8 +22,8 @@
     },
     "VALID_CLASSES": ["*"],
     "DISPLAY_CLASSES": [
-    { "class": "no_mask", "hexcode": "1F6B2"},
-    { "class": "mask", "hexcode": "1F6B6"}
+    { "class": "no_mask", "hexcode": "1F637"},
+    { "class": "mask", "hexcode": "1F622"}
     ],
     "PATHFINDER_COLORS": [
     "#1f77b4",
