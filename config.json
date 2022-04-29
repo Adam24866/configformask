@@ -2,7 +2,7 @@
     "OPENDATACAM_VERSION": "3.0.2",
     "PATH_TO_YOLO_DARKNET" : "/var/local/darknet",
     "VIDEO_INPUT": "file",
-    "NEURAL_NETWORK": "yolov4",
+    "NEURAL_NETWORK": "yolov4-mask",
     "VIDEO_INPUTS_PARAMS": {
     "file": "opendatacam_videos/Liverpool.mp4",
     "usbcam": "v4l2src device=/dev/video0 ! video/x-raw, framerate=30/1, width=640, height=360 ! videoconvert ! appsink",
@@ -45,10 +45,11 @@
     "red": "#AB4435"
     },
     "NEURAL_NETWORK_PARAMS": {
-    "yolov4": {
-    "data": "cfg/coco.data",
-    "cfg": "cfg/yolov4-416x416.cfg",
-    "weights": "yolov4.weights"
+    "yolov4-mask": {
+    "data": "cfg/obj.data",
+    "cfg": "cfg/yolov4-obj.cfg",
+    "weights": "yolov4_mask.weights",
+    "names": "obj.names"
     },
     "yolov4-tiny": {
     "data": "cfg/coco.data",
